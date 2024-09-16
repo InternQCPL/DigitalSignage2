@@ -22,11 +22,11 @@
     <div class = "body-container">
         <div class = "video-container">
         <video id = "video_player" controls loop autoplay>
-            <source src="video/video_1.mp4" type="video/mp4">
+            <source src="video_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         </div>
-        <div class = "books-container">
+       <div class = "books-container">
         <<h3>NEW ARRIVAL</h3> 
             <div class="slideshow-container">
 
@@ -49,13 +49,14 @@
 
                 
             </div>
-        </div>
+
+        </div> 
         <div class = "announcement-container">
             <div class = "announcement-box">
-                <h1>Announcement <h1>
+                   <h1>Announcement <h1>p
             </div>
         </div>
-    </div>
+    </div> 
     
     <div class="footer-container">
         <h1>

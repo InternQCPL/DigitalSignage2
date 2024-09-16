@@ -1,18 +1,23 @@
     *{margin: 0;
     }
     html, body {
-    overflow-x: hidden;
-     }
+    overflow-x: hidden;     }
     .header-container{
         border-bottom: solid;
-        padding: 1em;
+        padding-bottom: 1%;
         background: #0033A0;
+
     }
 
     .header-title{
         text-align: left;
         color: white;
         font-family: "Open Sans", sans-serif;
+        margin-left: 1%;
+        padding-top: 1%;
+        font-size: 23px; 
+
+
     }
 
     .time-date-container {
@@ -23,12 +28,12 @@
     }
     .current-time {
         font-family: "Opens Sans",sans-serif;
-        font-size: 25px;
+        font-size: 45px;
         font-weight: bold;
     }
     .current-date {
         font-family: "Opens Sans",sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
     }
 
@@ -37,15 +42,14 @@
     }
 
     .body-container {
-        border: solid;
         display: flex;
     }
         
     .video-container {
         position: absolute;
-        top: 13vh;
-        width: 65%;
-        height: 73vh;
+        top: 14vh;
+        width: 55%;
+        height: 75vh;
         border-radius: 20px;
         border: 1px solid #000;
         background: url(<path-to-image>) lightgray 50% / cover no-repeat;
@@ -53,7 +57,8 @@
                     0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;   
+        margin-left: 1%; 
     }
     
     #video_player {
@@ -63,40 +68,38 @@
         height: 100%; 
     }
     
-
     .books-container{
         position: absolute;
         border-radius: 20px;
         background: #FFF;
-        width: 32%;
-        height: 181px;
+        width: 42%;
+        height: 30%;
         right: 1em;
-        top: 6em;
-        border: solid;
-     
+        bottom: 11%;
+        border: solid; 
     }
+    
     .book-image {
-        width: 30px; 
-        height: 170px; 
+        width: 30%; 
+        height: auto; 
         object-fit: cover;
         border-radius: 5px;
-        margin: 5px;
     }
 
-    h3 {
-        position: absolute;
+    .books-container > h3 {
         color: red;
-        left: 200px;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: bolder;
+        font-family: "Open Sans",sans-serif;
+        text-align: center;
+        
     }
-
 
 .slideshow-container {
     position: relative;
     width: 25%;
     height: 70%;
-    bottom: 18px;
+    bottom: 15px;
   }
   
   .mySlides {
@@ -114,7 +117,7 @@
     font-size: 20px;
     padding: 10px;
     position: absolute;
-    bottom: -15px;
+    bottom: 15px;
     width: 100%;
     left: 200px;
     font-family: "Open Sans", sans-serif;
@@ -133,10 +136,10 @@
     .announcement-container {
         position: absolute;
         background: rgb(255, 255, 255);
-        width: 32%;
-        height: 40%;
+        width: 42%;
+        height: 43.5%;
         right: 1em;
-        bottom: 14%;
+        top: 14%;
         border-radius: 20px;
         display: flex;
         justify-content: center;
@@ -144,8 +147,8 @@
     }
     
     .announcement-box {
-        margin-top: -20px;
-        height: 40px;
+        margin-top: -8px;
+        height: 47px;
         width: 250px;
         background: red;
         border-radius: 20px;
@@ -155,7 +158,7 @@
         color: white;
         text-align: center;
         font-family: "Open Sans", sans-serif;
-        font-size: 26px;
+        font-size: 25px;
     }
 
     .footer-container{
