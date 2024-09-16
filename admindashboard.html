@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin_dash.css">
+</head>
+<body>
+    <header>
+        <h1>QCPL Admin Dashboard</h1>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Video Container</h2>
+            <div class="preview">
+                <video id="videoPreview" controls>
+                    <source src="current-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <input type="file" id="videoUpload" accept="video/*">
+            <button>Save Video</button>
+        </section>
+
+        <section class="container">
+            <h2>Announcement Container</h2>
+            <textarea id="announcementText" rows="4" placeholder="Enter announcement text here...">Current announcement text</textarea>
+        </section>
+
+        <section class="container">
+            <h2>Book Arrival Container</h2>
+            <div class="preview">
+                <img id="bookImagePreview" src="current-book-image.jpg" alt="Book Image">
+            </div>
+            <input type="file" id="bookImageUpload" accept="image/*">
+            <textarea id="bookText" rows="4" placeholder="Enter book arrival text here...">Current book text</textarea>
+        </section>
+
+        <section class="container">
+            <h2>Footer Container</h2>
+            <textarea id="footerText" rows="4" placeholder="Enter footer text here...">Current footer text</textarea>
+        </section>
+
+        <div class="actions">
+            <button onclick="saveAllChanges()">Save All Changes</button>
+        </div>
+    </main>
+
+    
+
+</body>
+</html>
