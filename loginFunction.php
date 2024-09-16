@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($stmt = $mysqli->prepare("SELECT user_id, password FROM users WHERE username = ?")) {
-        $stmt->bind_param("s", $username);
+        $stmt->bind_param("s", $username);  
         $stmt->execute();
         $stmt->store_result();
 

@@ -15,9 +15,7 @@
         font-family: "Open Sans", sans-serif;
         margin-left: 1%;
         padding-top: 1%;
-        font-size: 23px; 
-
-
+        font-size: 23px;
     }
 
     .time-date-container {
@@ -94,13 +92,15 @@
         text-align: center;
         
     }
-
-.slideshow-container {
-    position: relative;
-    width: 25%;
-    height: 70%;
-    bottom: 15px;
-  }
+    
+    .slideshow-container {
+        position: relative;
+        width: 25%;
+        height: 70%;
+        margin-left: 40px;
+        margin-top: 15px;
+        bottom: 15px;
+    }
   
   .mySlides {
     display: none;
@@ -108,22 +108,24 @@
   }
   
   .mySlides img {
-    width: 100%;
+    display: block;
+    margin: 0 auto; 
+    width: 100%; 
+    height: auto;
     border-radius: 10px;
-  }
-  
-  .text {
+}
+.text {
     color: #000;
     font-size: 20px;
     padding: 10px;
     position: absolute;
-    bottom: 15px;
+    bottom: 50px; 
     width: 100%;
-    left: 200px;
+    left: 200px; 
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
-  }
-  
+}
+
   .fade {
     animation: fadeEffect 1.5s;
   }
@@ -152,6 +154,15 @@
         width: 250px;
         background: red;
         border-radius: 20px;
+    }
+
+    .announcement-item {
+        color: black; 
+        font-size: 16px; 
+        text-align: center; 
+        margin-top: 50%;
+        margin-bottom: 50%;
+        overflow-wrap: break-word; 
     }
     
     .announcement-box > h1 {
