@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "css/dashboard.css">
+    <link rel = "stylesheet" type = "text/css" href = "dashboard.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -32,18 +32,18 @@
 
             
                 <div class="mySlides fade">
-                    <img src="images/book_1.png" alt="Book 1" class="book-image">
+                    <img src="book_1.png" alt="Book 1" class="book-image">
                     <div class="text">Holt Elements of Literature</div>
                 </div>
                 
                 <div class="mySlides fade">
-                    <img src="images/book_2.png" alt="Book 2" class="book-image">
+                    <img src="book_2.png" alt="Book 2" class="book-image">
                     <div class="text">Book Title 2</div>
                 </div>
 
              
                 <div class="mySlides fade">
-                    <img src="images/book_3.png" alt="Book 3" class="book-image">
+                    <img src="book_3.png" alt="Book 3" class="book-image">
                     <div class="text">Book Title 3</div>
                 </div>
 
@@ -65,7 +65,7 @@
 
 </body>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </html>
 
 
