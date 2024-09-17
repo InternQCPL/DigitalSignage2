@@ -13,7 +13,7 @@
 
     <div class="container">
         <div class="form-container">
-            <h2>Admin Sign-In</h2>
+            <h2>QCPL Admin Sign In</h2>
             <p>Enter your username and password</p>
             <form id="signInForm" action = "loginFunction.php" method = "POST">
                 <div class="input-group">

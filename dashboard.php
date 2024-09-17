@@ -33,10 +33,11 @@
         </div>
         <div class="announcement-container">
             <div class="announcement-box">
-                <h1>Announcement</h1> 
-            </div>
-            
+                <h1>Announcement</h1>
         </div>  
+        <div class="announcement-text">
+                <p></p>
+        </div>
     </div>
     <div class="footer-container">
         <h1>
