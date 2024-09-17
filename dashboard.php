@@ -35,7 +35,8 @@
             <div class="announcement-box">
                 <h1>Announcement</h1> 
             </div>
-        </div>
+            
+        </div>  
     </div>
     <div class="footer-container">
         <h1>

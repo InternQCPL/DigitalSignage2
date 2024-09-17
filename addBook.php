@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $allowed_types = ['jpg', 'jpeg', 'png', 'gif'];
     $file_extension = strtolower(pathinfo($bookImg, PATHINFO_EXTENSION));
-    $max_file_size = 2 * 1024 * 1024; // 
+    $max_file_size = 8 * 1024 * 1024; // 
 
     if (!in_array($file_extension, $allowed_types)) {
         echo "Error: Only JPG, JPEG, PNG, and GIF files are allowed.";
