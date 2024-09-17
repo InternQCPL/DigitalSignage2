@@ -45,7 +45,7 @@
         <!-- Add New Book Section -->
         <section class="container">
             <h2>Add New Book</h2>
-            <form id="addBookForm" action="add_book.php" method="POST" enctype="multipart/form-data">
+            <form id="addBookForm" action="addBook.php" method="POST" enctype="multipart/form-data">
                 <div>
                     <label for="title">Book Title:</label>
                     <input type="text" id="title" name="title" required>

@@ -15,7 +15,7 @@
         <div class="form-container">
             <h2>Admin Sign-In</h2>
             <p>Enter your username and password</p>
-            <form id="signInForm" action = "PHP/loginFunction.php" method = "POST">
+            <form id="signInForm" action = "loginFunction.php" method = "POST">
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required placeholder="Enter Username">

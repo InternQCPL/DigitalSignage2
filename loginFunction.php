@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //TEMPORARY NO HASHED PASSWORD
             if ($password === $stored_password) {
                 $_SESSION['user_id'] = $user_id;
-                header('Location: ../dashboard.php');
+                header('Location: dashboard.php');
                 exit;
             } else {
                 echo 'Invalid password!';
