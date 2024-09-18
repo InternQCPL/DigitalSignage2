@@ -11,7 +11,7 @@
         <h1>QCPL Admin Dashboard</h1>
         <nav>
             <a href="#">Dashboard</a>
-            <a href="#">Logout</a>
+            <a href="logout.php">Logout</a>
         </nav>
     </header>
 
