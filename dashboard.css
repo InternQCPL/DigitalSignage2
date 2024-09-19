@@ -85,30 +85,28 @@
     }
 
     .books-container > h3 {
-        color: red;
+        color: rgb(255, 255, 255);
         font-size: 20px;
         font-weight: bolder;
         font-family: "Open Sans",sans-serif;
         text-align: center;
-        
+        background-color: red;
+        border-radius: 5px;
     }
     
     .slideshow-container {
         position: absolute;
-        width: 80%;
+        width: 95%;
         height: 80%;
         bottom: 15px;
-        left: 5%;
-        top: 13%;
-        border: solid;
+        left: 2%;
+        top: 15%;
         overflow: hidden;
+    
         
     }
 
     
-        
-
-  
   .mySlides {
     width: 100%;
     height: 100%; 
@@ -122,11 +120,16 @@
     display: block;
     margin: 0 auto; 
     width: 100%; 
-    height: auto;
-    border-radius: 10px;
-    width: 100%; /* Scale image to fit width */
-    height: 100%; /* Scale image to fit height */
-    object-fit: cover;
+    height: 90%;
+    max-width: 100%;
+    width: 21%; /* Scale image to fit width */
+    height:93%; /* Scale image to fit height */
+    position: absolute;
+    left: 2%;
+    margin: 1%;
+    webkit-box-shadow: 5px 8px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 8px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 5px 8px 14px -3px rgba(0,0,0,0.75);
 }
 .text {
     color: #000;
@@ -134,10 +137,13 @@
     padding: 10px;
     position: absolute;
     bottom: 50px; 
-    width: 100%;
-    left: 200px; 
+    width: 60%;
+    left:32%; 
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
+    top: 20%;
+    text-align: center;
+    font-size: 27px;
 }
 
   .fade {
@@ -215,7 +221,7 @@
         background: red;
         text-align: center;
         font-size: 12px;
-        padding: 20px;
+        padding: 18px;
         position: absolute;
         bottom: 1px;
     }
