@@ -7,8 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = filter_var(trim($_POST['username'] ?? ''), FILTER_SANITIZE_STRING);
     $password = trim($_POST['password'] ?? '');
 
+    // Check if username or password are empty
     if (empty($username) || empty($password)) { 
-        echo 'Username and password are required!';
+        header('Location: loginForm.php?error=Username and password are required!');
         exit;
     }
 
@@ -18,29 +19,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute();
         $stmt->store_result();
 
+        // Check if username exists
         if ($stmt->num_rows > 0) {
             $stmt->bind_result($user_id, $stored_password);
             $stmt->fetch();
 
-            // Compare passwords
+            // Verify password
             if ($password === $stored_password) {
                 $_SESSION['user_id'] = $user_id;
                 header('Location: admin_dashboard.php');
                 exit;
             } else {
-                echo 'Invalid username or password!';
+                // If password is incorrect
+                header('Location: loginForm.php?error=Invalid username or password!');
+                exit;
             }
         } else {
-            echo 'Invalid username or password!';
+            // If username doesn't exist
+            header('Location: loginForm.php?error=Invalid username or password!');
+            exit;
         }
 
         $stmt->close();
     } else {
-        echo 'An error occurred while processing your request.';
+        // In case of a query error
+        header('Location: loginForm.php?error=An error occurred while processing your request.');
+        exit;
     }
 
     $mysqli->close();
 } else {
-    echo 'Invalid request method!';
+    // If the request method is not POST
+    header('Location: loginForm.php?error=Invalid request method!');
+    exit;
 }
-?>
